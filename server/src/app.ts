@@ -14,9 +14,6 @@ dotenv.config();
 
 const app = express();
 
-app.set("port", process.env.PORT || 3000);
-app.set("ENV", process.env.NODE_ENV);
-
 app.use(helmet());
 app.use(compression());
 app.use(express.json());
