@@ -1,11 +1,6 @@
-### Routes
+### NNode server
 
-#### GET /videos
+#### Installing and running
 
-This endpoint supports pagination, will return only 5 videos per page
-
-#### Sample response
-
-```json
-
-```
+* `yarn install`
+* `yarn run dev`
