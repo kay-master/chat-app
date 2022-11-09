@@ -1,0 +1,40 @@
+:host {
+    form {
+        background-color: #e9e9e9;
+        border: 1px solid #cdcbcb;
+        border-radius: 8px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 65px;
+    }
+
+    textarea {
+        border: none;
+        margin: 0;
+        padding: 6px 50px 6px 18px;
+        resize: none;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 8px;
+        display: block;
+        width: 100%;
+        font-family: "Nunito", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    button {
+        background-color: var(--pink);
+        border: none;
+        color: #fff;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        right: 13px;
+        position: absolute;
+        border-radius: 4px;
+    }
+}

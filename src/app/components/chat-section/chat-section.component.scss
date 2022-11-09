@@ -1,0 +1,24 @@
+.chat-section {
+    &__conversations {
+        margin-bottom: 30px;
+        height: calc(100vh - 235px);
+        overflow: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 50px;
+
+        >*:not(:last-child) {
+            margin-top: 18px;
+        }
+
+        &.no-convo {
+            justify-content: center;
+        }
+
+        .no-chats {
+            text-align: center;
+            color: #afadad;
+            font-size: 19px;
+        }
+    }
+}

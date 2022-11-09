@@ -1,0 +1,11 @@
+<form action="post" [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+  <textarea
+    placeholder="Type a message"
+    required
+    minlength="1"
+    formControlName="message"
+  ></textarea>
+  <button type="submit" [disabled]="!messageForm.valid">
+    <i class="fa-solid fa-paper-plane"></i>
+  </button>
+</form>

@@ -1,0 +1,15 @@
+<div class="room">
+  <div class="room__left">
+    <h1>
+      Private chat: <span>{{ chatId }}</span>
+    </h1>
+    <div class="connected-users" *ngIf="userCount > 0">
+      Connected: {{ userCount }}
+    </div>
+    <app-media></app-media>
+  </div>
+  <div class="room__right">
+    <h1>Chat room</h1>
+    <app-chat-section></app-chat-section>
+  </div>
+</div>

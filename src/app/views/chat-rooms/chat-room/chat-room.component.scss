@@ -1,0 +1,44 @@
+.room {
+    display: flex;
+    height: 100%;
+
+    &__left {
+        flex-basis: 0;
+        flex-grow: 1;
+        height: 100%;
+        max-width: calc(100% - 418px);
+        display: table;
+        padding: 18px 0 35px;
+        padding-right: 30px;
+
+        h1 {
+            margin: 15px 0 25px;
+            font-size: 26px;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        .connected-users {
+            margin-top: -20px;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__right {
+        max-width: 418px;
+        width: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: var(--greyBg);
+        padding: 35px 52px;
+
+        h1 {
+            margin: 15px 0 25px;
+            font-size: 26px;
+        }
+    }
+}

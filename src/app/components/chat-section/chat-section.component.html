@@ -1,0 +1,19 @@
+<div class="chat-section">
+  <div
+    class="chat-section__conversations"
+    [class]="conversation.length === 0 ? 'no-convo' : ''"
+  >
+    <app-chat-bubble
+      *ngFor="let convo of conversation"
+      [data]="convo"
+      [class]="convo.incoming ? 'left' : 'right'"
+    ></app-chat-bubble>
+
+    <div class="no-chats" *ngIf="conversation.length === 0">
+      No conversation
+    </div>
+  </div>
+  <div>
+    <app-chat-form></app-chat-form>
+  </div>
+</div>

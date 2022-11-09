@@ -1,0 +1,9 @@
+<div class="bubble">
+  <div>
+    <img [src]="data.picture" />
+  </div>
+</div>
+<div class="detail">
+  <div>{{ data.text }}</div>
+  <span>{{ data.date | date: "MMM d, y, h:mm a" }}</span>
+</div>

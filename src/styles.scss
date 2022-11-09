@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,800;1,200&display=swap');
+
+:root {
+    --pink: #ef4b87;
+    --red: #f94644;
+    --green: #4caf50;
+    --lightGrey: #a4aaa6;
+    --grey: #9b9b9b;
+    --greyBg: #f6f6f6;
+    --darkGrey: #767676;
+    --nude: #f5e5eb;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.root {
+    height: 100%;
+    display: block;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.d-none {
+    display: none !important;
+}

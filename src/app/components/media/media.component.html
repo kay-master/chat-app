@@ -1,0 +1,45 @@
+<div class="media init-call" *ngIf="!localStream">
+  <div *ngIf="!loadingMediaDevice && !incomingCall">
+    Just start a video call
+  </div>
+  <div *ngIf="!loadingMediaDevice && incomingCall">Incoming video call</div>
+  <button
+    type="button"
+    *ngIf="!loadingMediaDevice && !incomingCall"
+    (click)="start()"
+  >
+    Start call
+  </button>
+
+  <button
+    type="button"
+    *ngIf="!loadingMediaDevice && incomingCall"
+    (click)="answerCall()"
+  >
+    Answer call
+  </button>
+
+  <div *ngIf="loadingMediaDevice">Loading media devices ...</div>
+
+  <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+</div>
+
+<div class="media" [class]="localStream ? '' : 'd-none'">
+  <div class="media__container">
+    <video
+      id="localVideo"
+      poster="https://images.unsplash.com/photo-1667506057353-cb1b43782937?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    ></video>
+  </div>
+  <div class="media__remote">
+    <video
+      id="remoteVideo"
+      poster="https://images.unsplash.com/photo-1667506057353-cb1b43782937?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    ></video>
+  </div>
+  <div class="media__controls" *ngIf="callStarted">
+    <button class="call" [class]="callBtnClass" (click)="hangup()">
+      <i class="fa-solid fa-phone"></i>
+    </button>
+  </div>
+</div>
