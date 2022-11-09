@@ -2,7 +2,7 @@ import app from "./app";
 
 const { PORT, NODE_ENV } = process.env;
 
-const server = app.listen(PORT, () => {
+const server = app.listen(PORT || 3001, () => {
 	console.log(
 		"App is running at http://localhost:%d in %s mode",
 		PORT,
