@@ -41,4 +41,19 @@
             font-size: 26px;
         }
     }
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        padding-right: 30px;
+
+        &__left {
+            padding-right: 0;
+            max-width: 100%;
+        }
+
+        &__right {
+            position: relative;
+            max-width: 100%;
+        }
+    }
 }
