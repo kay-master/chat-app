@@ -9,6 +9,11 @@ This is a video and chat app, utilizing websockets and WebRTC
 * `yarn install`, then lastly
 * run `ng serve`
 
+#### Run on server
+* `npm install -g serve`
+* `ng build`
+* `serve dist/chat-app`
+
 #### To run server side:
 * `cd server`, then
 * `yarn install`, then lastly
