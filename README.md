@@ -12,7 +12,9 @@ This is a video and chat app, utilizing websockets and WebRTC
 #### Run on server
 * `npm install -g serve`
 * `ng build`
-* `serve dist/chat-app`
+* `serve dist/chat-app -s`
+
+Client link https://hoy622-3000.preview.csb.app/
 
 #### To run server side:
 * `cd server`, then
