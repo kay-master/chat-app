@@ -6,5 +6,11 @@ button {
     font-family: "Nunito", sans-serif;
     font-weight: 500;
     background-color: var(--pink);
+    transition: background-color 0.2s ease-in-out;
     color: #fff;
+
+    &:active,
+    &:hover {
+        background-color: #db457c;
+    }
 }

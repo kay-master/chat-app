@@ -8,7 +8,8 @@ import { ChatSectionComponent } from 'src/app/components/chat-section/chat-secti
 import { MediaComponent } from 'src/app/components/media/media.component';
 import { ChatBubbleComponent } from '../../components/chat-bubble/chat-bubble.component';
 import { ChatFormComponent } from '../../components/chat-form/chat-form.component';
-import { ButtonComponent } from '../../components/button/button.component';
+
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -17,8 +18,12 @@ import { ButtonComponent } from '../../components/button/button.component';
     MediaComponent,
     ChatBubbleComponent,
     ChatFormComponent,
-    ButtonComponent,
   ],
-  imports: [CommonModule, ChatRoomsRoutingModule, ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    ChatRoomsRoutingModule,
+    ReactiveFormsModule,
+    SharedModule,
+  ],
 })
 export class ChatRoomsModule {}

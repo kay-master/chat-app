@@ -24,20 +24,5 @@
         .btn {
             text-align: center;
         }
-
-        button {
-            border: 1px solid #ef4b87;
-            border-radius: 5px;
-            height: 41px;
-            padding: 0 18px;
-            background-color: #ef4b87;
-            color: #fff;
-            font-size: 15px;
-            font-family: "Nunito", sans-serif;
-
-            &:active {
-                background-color: #db457c;
-            }
-        }
     }
 }

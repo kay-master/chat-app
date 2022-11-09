@@ -3,21 +3,18 @@
     Just start a video call
   </div>
   <div *ngIf="!loadingMediaDevice && incomingCall">Incoming video call</div>
-  <button
-    type="button"
+  <app-button
+    text="Start call"
     *ngIf="!loadingMediaDevice && !incomingCall"
     (click)="start()"
-  >
-    Start call
-  </button>
+  ></app-button>
 
-  <button
-    type="button"
+  <app-button
     *ngIf="!loadingMediaDevice && incomingCall"
     (click)="answerCall()"
+    text="Answer call"
   >
-    Answer call
-  </button>
+  </app-button>
 
   <div *ngIf="loadingMediaDevice">Loading media devices ...</div>
 
